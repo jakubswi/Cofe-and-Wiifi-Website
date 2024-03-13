@@ -1,10 +1,11 @@
+import os
+
 from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, URLField, RadioField
 from wtforms.validators import DataRequired
-import os
 
 API_KEY = os.environ.get("google_API_KEY")
 app = Flask(__name__)
